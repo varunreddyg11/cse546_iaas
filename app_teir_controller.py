@@ -49,7 +49,7 @@ def start_new_instances(no_of_instances,count_of_running_instances_fortagging):
                     'Enabled': False
                 },
                 SecurityGroupIds=[
-                    "ami-036eeb577859f5297"
+                    "sg-00e963fb19d393189"
                 ],
             )
         instance = start_instance["Instances"][0]
