@@ -40,7 +40,7 @@ def start_new_instances(no_of_instances,count_of_running_instances_fortagging):
     for i in range(no_of_instances):
         start_instance = ec2_client_start.run_instances(
                 BlockDeviceMappings=config,
-                ImageId='ami-0aae5a8e3e77bb3c0',
+                ImageId='ami-036eeb577859f5297',
                 InstanceType='t2.micro',
                 KeyName='loginto_webteir',
                 MinCount=1,
