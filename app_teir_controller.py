@@ -6,7 +6,7 @@ from time import sleep
 from botocore.exceptions import ClientError
 
 
-used_master_instances = ["i-00d6564a61cbdaa2f","i-0b8486e7cd644a41f"]
+used_master_instances = ["i-00d6564a61cbdaa2f","i-0b8486e7cd644a41f", "i-04ac0f006d5ac5de1","i-0e046ff2bce23e91d","i-01129d9bc51427edc"]
 s3_input_bucket_name= "cse546-project1-group16-input"
 s3_output_bucket_name="cse546-project1-group16-output"
 sqs_request_queue_name = "cse546_project1_group16_sqs_input"
@@ -49,7 +49,7 @@ def start_new_instances(no_of_instances,count_of_running_instances_fortagging):
                     'Enabled': False
                 },
                 SecurityGroupIds=[
-                    "sg-00e963fb19d393189"
+                    "ami-036eeb577859f5297"
                 ],
             )
         instance = start_instance["Instances"][0]
