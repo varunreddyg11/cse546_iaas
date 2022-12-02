@@ -20,3 +20,6 @@ S3:
 s3_input_bucket_name= "cse546-project1-group16-input"
 s3_output_bucket_name="cse546-project1-group16-output"
 
+ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
