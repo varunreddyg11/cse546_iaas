@@ -75,7 +75,7 @@ def get_list_of_instance(instancestate):
     return list_of_instance_ids
 
 def trigger_app_tier_script(ec2_client, instance_id):
-    ssh_key = paramiko.RSAKey.from_private_key_file('/home/ec2-user/app_teir_master/loginto_webteir.pem')
+    ssh_key = paramiko.RSAKey.from_private_key_file('/home/ubuntu/app_controller/cse546_iaas/loginto_webteir.pem')
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     instance = [i for i in ec2_client.instances.filter(InstanceIds=[instance_id])][0]
