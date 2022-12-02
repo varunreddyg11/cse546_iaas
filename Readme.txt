@@ -4,8 +4,7 @@ Group Members: Varun Kumar Reddy Gunnreddy
 # credentails for aws, loginto_webteir.pem for accessing through ssh  
 AWS credentials are requried for scripts
 also attaching aws/credentails
-Keyid : AKIARWDWCELUJWA43ABS
-access_key: I3ygQNuFu6LtLSCOT6uHQ7cJnvC6nOBbulJdldEa
+
 
 Url : http://35.174.89.85:8080/upload_image
 EIP : 35.174.89.85
